@@ -267,4 +267,83 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
+
+}
+
+/* --- ================================== --- */
+/* ---      MOBILE RESPONSIVE STYLES      --- */
+/* --- ================================== --- */
+
+/* This rule applies to any screen 768px wide or smaller */
+@media (max-width: 768px) {
+
+    /* --- Layout --- */
+    .container {
+        /* Stack the sidebar and main content vertically */
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        /* Make the sidebar full width */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* --- Header --- */
+    header {
+        /* Allow the header items to wrap */
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .header-title {
+        margin: 15px 0;
+    }
+
+    .header-title h1 {
+        font-size: 1.5em; /* Smaller title */
+    }
+
+    .header-title h2 {
+        font-size: 1em; /* Smaller subtitle */
+    }
+
+    .logo {
+        width: 60px; /* Smaller logos */
+        height: 60px;
+    }
+
+    /* --- Profile Card --- */
+    .profile-card {
+        /* Stack the profile pic on top of the info */
+        flex-direction: column;
+        align-items: center; /* Center everything */
+        text-align: center;
+    }
+    
+    .profile-pic {
+        margin-right: 0; /* Remove side margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+
+    .profile-info h2 {
+        font-size: 1.8em;
+    }
+    
+    /* --- Search Bar --- */
+    .search-wrapper {
+        /* Stack the button below the search bar */
+        flex-direction: column;
+    }
+
+    #search-box {
+        border-radius: 5px 5px 0 0; /* Fix corners */
+    }
+
+    #search-button {
+        width: 100%;
+        border-radius: 0 0 5px 5px; /* Fix corners */
+    }
 }
