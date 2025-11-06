@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Reconnaissance Regiment</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Regiment Logo 1" class="logo">
+        
+        <div class="header-title">
+            <h1>5 Reconnaissance Regiment</h1>
+            <h2>Personnel Database</h2>
+        </div>
+        
+        <img src="logo.jpg" alt="Regiment Logo 2" class="logo">
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Quick Links</h3>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="https://alt.army.lk/slac">Main Regiment Page</a></li>
+                        <li><a href="#">Contact Directory</a></li>
+                        <li><a href="#">Support Services</a></li>
+                        <li><a href="#">Submit Report</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="sidebar-widget info-box">
+                <h4>Sri Lanka Armoured Corps</h4>
+                <p class="motto">"Whither the fates call"</p>
+                <p class="motto-translation">1955 - present</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="search-container">
+                <label for="search-box">Search Soldier by Service Number:</label>
+                <div class="search-wrapper">
+                    <input type="text" id="search-box" placeholder="Enter service number...">
+                    <button id="search-button">Search</button>
+                </div>
+            </div>
+
+            <div id="profile-display">
+                <p id="message">Enter a service number to find a soldier.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 5th Reconnaissance Regiment. All rights reserved.</p>
+        <p>For official use only. All information is classified and monitored.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
